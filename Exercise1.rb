@@ -1,4 +1,4 @@
-def hashoccur(input)
+def hashoccur(inputString)
     x=Hash.new(0)
     input.split("").each do |i|
         if i.match?(/[A-Za-z]/)
@@ -8,5 +8,5 @@ def hashoccur(input)
     print x
 end
 print "Enter the input String:"
-input = gets.chomp
-hashoccur(input)
+inputString = gets.chomp
+hashoccur(inputString)
